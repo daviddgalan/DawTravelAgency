@@ -28,70 +28,61 @@ public class Main {
                                 System.out.println("Introduce el numero maximo de viajeros(máximo 5)");
                                 viajeros= Integer.parseInt(s.nextLine());
                             }while(viajeros<0 || viajeros>5);
-                        }while(viajeros>=0 && viajeros<=5) {
-                            switch (viajeros){
-                                case 1:
-                                    System.out.println("Cuanto paga el viajero numero 1");
-                                     viajero1 =Integer.parseInt(s.nextLine());
-                                    break;
-                                case 2 :
-                                    System.out.println("Cuanto paga el viajero numero 1");
-                                    viajero1= Integer.parseInt(s.nextLine());
-                                    System.out.println("Cuanto paga el viajero numero 2");
-                                     viajero2= Integer.parseInt(s.nextLine());
-                                    break;
-                                case 3 :
-                                    System.out.println("Cuanto paga el viajero numero 1");
-                                    viajero1= Integer.parseInt(s.nextLine());
-                                    System.out.println("Cuanto paga el viajero numero 2");
-                                    viajero2= Integer.parseInt(s.nextLine());
-                                    System.out.println("Cuanto paga el viajero numero 1");
-                                     viajero3= Integer.parseInt(s.nextLine());
-                                    break;
-                                case 4 :
-                                    System.out.println("Cuanto paga el viajero numero 1");
-                                    viajero1= Integer.parseInt(s.nextLine());
-                                    System.out.println("Cuanto paga el viajero numero 2");
-                                    viajero2= Integer.parseInt(s.nextLine());
-                                    System.out.println("Cuanto paga el viajero numero 3");
-                                    viajero3= Integer.parseInt(s.nextLine());
-                                    System.out.println("Cuanto paga el viajero numero 4");
-                                     viajero4= Integer.parseInt(s.nextLine());
-                                    break;
-                                case 5 :
-                                    System.out.println("Cuanto paga el viajero numero 1");
-                                    viajero1= Integer.parseInt(s.nextLine());
-                                    System.out.println("Cuanto paga el viajero numero 2");
-                                    viajero2= Integer.parseInt(s.nextLine());
-                                    System.out.println("Cuanto paga el viajero numero 3");
-                                    viajero3= Integer.parseInt(s.nextLine());
-                                    System.out.println("Cuanto paga el viajero numero 4");
-                                    viajero4= Integer.parseInt(s.nextLine());
-                                    System.out.println("Cuanto paga el viajero numero 5");
-                                     viajero5= Integer.parseInt(s.nextLine());
-                                    break;
+                        }if (viajeros>=0 && viajeros<=5) {
+                          do{
 
-                            }
-                            if(viajero1==-1){
-                                System.out.println("El viajero 1 no existe");
-                            }
-                            if(viajero2==-1){
-                                System.out.println("El viajero 2 no existe");
 
-                            }
-                            if(viajero3==-1){
-                                System.out.println("El viajero 3 no existe");
+                             switch (viajeros){
 
-                            }
-                            if(viajero4==-1){
-                                System.out.println("El viajero 4 no existe");
+                                    case 1:
+                                        System.out.println("Cuanto paga el viajero numero 1");
+                                         viajero1 =Integer.parseInt(s.nextLine());
+                                        break;
+                                    case 2 :
+                                        System.out.println("Cuanto paga el viajero numero 1");
+                                        viajero1= Integer.parseInt(s.nextLine());
+                                        System.out.println("Cuanto paga el viajero numero 2");
+                                         viajero2= Integer.parseInt(s.nextLine());
+                                        break;
+                                    case 3 :
+                                        System.out.println("Cuanto paga el viajero numero 1");
+                                        viajero1= Integer.parseInt(s.nextLine());
+                                        System.out.println("Cuanto paga el viajero numero 2");
+                                        viajero2= Integer.parseInt(s.nextLine());
+                                        System.out.println("Cuanto paga el viajero numero 1");
+                                         viajero3= Integer.parseInt(s.nextLine());
+                                        break;
+                                    case 4 :
+                                        System.out.println("Cuanto paga el viajero numero 1");
+                                        viajero1= Integer.parseInt(s.nextLine());
+                                        System.out.println("Cuanto paga el viajero numero 2");
+                                        viajero2= Integer.parseInt(s.nextLine());
+                                        System.out.println("Cuanto paga el viajero numero 3");
+                                        viajero3= Integer.parseInt(s.nextLine());
+                                        System.out.println("Cuanto paga el viajero numero 4");
+                                         viajero4= Integer.parseInt(s.nextLine());
+                                        break;
+                                    case 5 :
+                                        System.out.println("Cuanto paga el viajero numero 1");
+                                        viajero1= Integer.parseInt(s.nextLine());
+                                        System.out.println("Cuanto paga el viajero numero 2");
+                                        viajero2= Integer.parseInt(s.nextLine());
+                                        System.out.println("Cuanto paga el viajero numero 3");
+                                        viajero3= Integer.parseInt(s.nextLine());
+                                        System.out.println("Cuanto paga el viajero numero 4");
+                                        viajero4= Integer.parseInt(s.nextLine());
+                                        System.out.println("Cuanto paga el viajero numero 5");
+                                         viajero5= Integer.parseInt(s.nextLine());
+                                        break;
+                             }
+                             if(viajero1<0||viajero2<0||viajero3<0||viajero4<0||viajero5<0){
+                                  System.out.println("El pago de todos los viajeros debe de ser mayor que 0");
+                              }
+                            }while(viajero1<0||viajero2<0||viajero3<0||viajero4<0||viajero5<0);
 
-                            }
-                            if(viajero5==-1){
-                                System.out.println("El viajero no existe");
-                            }
                         }
-                    }while (menu < 2);
+                    menu=menu+1;
+                    }while (menu < 2&&menu>0);
                     break;
                 case 2:
                     break;
