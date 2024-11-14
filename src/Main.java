@@ -101,26 +101,31 @@ public class Main {
                         reparto = (viajero1 + viajero2 + viajero3 + viajero4 + viajero5)/viajeros;
                         if (viajero1 < reparto){
                             vuelta1 = reparto - viajero1;
+                            vuelta1 = vuelta1*(-1);
                         }else if (viajero1 > reparto){
                             vuelta1 = viajero1 - reparto;
                         }
                         if (viajero2 < reparto){
                             vuelta2 = reparto - viajero2;
+                            vuelta2 = vuelta2*(-1);
                         }else if (viajero2 > reparto){
                             vuelta2 = viajero2 - reparto;
                         }
                         if (viajero3 < reparto){
                             vuelta3 = reparto - viajero3;
+                            vuelta3 = vuelta3*(-1);
                         }else if (viajero3 > reparto){
                             vuelta3 = viajero3 - reparto;
                         }
                         if (viajero4 < reparto){
                             vuelta4 = reparto - viajero4;
+                            vuelta4 = vuelta4*(-1);
                         }else if (viajero4 > reparto){
                             vuelta4 = viajero4 - reparto;
                         }
                         if (viajero5 < reparto){
                             vuelta5 = reparto - viajero5;
+                            vuelta5 = vuelta5*(-1);
                         }else if (viajero5 > reparto){
                             vuelta5 = viajero5 - reparto;
                         }
@@ -130,6 +135,11 @@ public class Main {
                     System.out.println("-------------------------------------------------------");
                     break;
                 case 3:
+                    System.out.println(vuelta1);
+                    System.out.println(vuelta2);
+                    System.out.println(vuelta3);
+                    System.out.println(vuelta4);
+                    System.out.println(vuelta5);
             }
         }while(menu < 4);
         System.out.println("-------------------------------------------------------");
