@@ -17,6 +17,11 @@ public class Main {
         float vuelta3 = 0;
         float vuelta4 = 0;
         float vuelta5 = 0;
+        String viajero1Debes = "";
+        String viajero2Debes = "";
+        String viajero3Debes = "";
+        String viajero4Debes = "";
+        String viajero5Debes = "";
         do {
             System.out.println("1.  Introducir gastos de envio.");
             System.out.println("2.  Calcular reparto de gastos.");
@@ -99,47 +104,67 @@ public class Main {
                         break;
                     }else{
                         reparto = (viajero1 + viajero2 + viajero3 + viajero4 + viajero5)/viajeros;
+
                         if (viajero1 < reparto){
                             vuelta1 = reparto - viajero1;
-                            vuelta1 = vuelta1*(-1);
+                            viajero1Debes = "Debes: " + vuelta1 + " €";
                         }else if (viajero1 > reparto){
                             vuelta1 = viajero1 - reparto;
+                            viajero1Debes = "Te deben " + vuelta1 + " €";
                         }
+
                         if (viajero2 < reparto){
                             vuelta2 = reparto - viajero2;
-                            vuelta2 = vuelta2*(-1);
+                            viajero2Debes = "Debes: " + vuelta2 + " €";
                         }else if (viajero2 > reparto){
                             vuelta2 = viajero2 - reparto;
+                            viajero2Debes = "Te deben: " + vuelta2 + " €";
                         }
+
                         if (viajero3 < reparto){
                             vuelta3 = reparto - viajero3;
-                            vuelta3 = vuelta3*(-1);
+                            viajero3Debes = "Debes: " + vuelta3 + " €";
                         }else if (viajero3 > reparto){
                             vuelta3 = viajero3 - reparto;
+                            viajero3Debes = "Te deben: " + vuelta3 + " €";
                         }
+
                         if (viajero4 < reparto){
                             vuelta4 = reparto - viajero4;
-                            vuelta4 = vuelta4*(-1);
+                            viajero4Debes = "Debes: " + vuelta4 + " €";
                         }else if (viajero4 > reparto){
                             vuelta4 = viajero4 - reparto;
+                            viajero4Debes = "Te deben: " + vuelta4 + " €";
                         }
+
                         if (viajero5 < reparto){
                             vuelta5 = reparto - viajero5;
-                            vuelta5 = vuelta5*(-1);
+                            viajero5Debes = "Debes: " + vuelta5 + " €";
                         }else if (viajero5 > reparto){
-                            vuelta5 = viajero5 - reparto;
+                            viajero5Debes = "Te deben: " + vuelta5 + " €";
                         }
+
                     }
                     System.out.println("-------------------------------------------------------");
                     System.out.println("El reparto se ha calculado exitosamente.");
                     System.out.println("-------------------------------------------------------");
                     break;
                 case 3:
-                    System.out.println(vuelta1);
-                    System.out.println(vuelta2);
-                    System.out.println(vuelta3);
-                    System.out.println(vuelta4);
-                    System.out.println(vuelta5);
+                    if (vuelta1 == 0){
+                        System.out.println();
+                    } else {
+                        System.out.println(viajero1Debes);
+                    }
+
+                    if (vuelta2 == 0){
+                        System.out.println();
+                    } else {
+                        System.out.println(viajero2Debes);
+                    }
+
+                    System.out.println(viajero3Debes);
+                    System.out.println(viajero4Debes);
+                    System.out.println(viajero5Debes);
             }
         }while(menu < 4);
         System.out.println("-------------------------------------------------------");
