@@ -150,21 +150,33 @@ public class Main {
                     System.out.println("-------------------------------------------------------");
                     break;
                 case 3:
-                    if (vuelta1 == 0){
-                        System.out.println();
-                    } else {
-                        System.out.println(viajero1Debes);
+                    if (vuelta1!= 0){
+                        System.out.println("viajero1"+viajero1Debes);
+                    }else{
+                        System.out.println("No debes nada");
+                    }
+                    if (vuelta2 != 0){
+                        System.out.println("viajero2"+viajero2Debes);
+                    }else{
+                        System.out.println("No debes nada");
+                    }
+                    if (vuelta3 != 0){
+                        System.out.println("viajero3"+viajero3Debes);
+                    }else{
+                        System.out.println("No debes nada");
+                    }
+                    if (vuelta4 != 0){
+                        System.out.println("viajero4"+viajero4Debes);
+                    }else{
+                        System.out.println("No debes nada");
+                    }
+                    if (vuelta5 != 0){
+                        System.out.println("viajero5"+viajero5Debes);
+                    }else{
+                        System.out.println("No debes nada");
                     }
 
-                    if (vuelta2 == 0){
-                        System.out.println();
-                    } else {
-                        System.out.println(viajero2Debes);
-                    }
 
-                    System.out.println(viajero3Debes);
-                    System.out.println(viajero4Debes);
-                    System.out.println(viajero5Debes);
             }
         }while(menu < 4);
         System.out.println("-------------------------------------------------------");
